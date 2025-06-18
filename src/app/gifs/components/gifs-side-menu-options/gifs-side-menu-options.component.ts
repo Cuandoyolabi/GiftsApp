@@ -3,10 +3,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
 interface MenuOption{
 
+  icon: string;
   label: string;
   subLabel: string;
   route: string;
-  icon: string;
 
 }
 
@@ -17,6 +17,7 @@ interface MenuOption{
   templateUrl: './gifs-side-menu-options.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class GifsSideMenuOptionsComponent {
 
   menuOptions: MenuOption[] = [
@@ -27,14 +28,12 @@ export class GifsSideMenuOptionsComponent {
       subLabel: 'Gifs Populares',
       route: 'dashboard/trending',
     },
-        {
+    {
       icon: 'fa-solid fa-magnifying-glass',
       label: 'Buscador',
       subLabel: 'Buscar Gifs',
-      route: 'dashboard/search',
+      route: 'search',
     },
 
   ]
-
-
 }
