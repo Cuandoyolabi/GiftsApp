@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { GifListItemComponent } from "../../components/gif-list-item/gif-list-item.component";
 import { GifListComponent } from "../../components/gif-list/gif-list.component";
 
