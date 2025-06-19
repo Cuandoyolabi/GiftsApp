@@ -1,6 +1,15 @@
 <div class="" style="height: 100%;">
 
-    <app-gif-list-item></app-gif-list-item>
+  @for(gif of gifs(); track gif){
+
+    <app-gif-list-item [imageUrl]="gif"></app-gif-list-item>
+     <app-gif-list-item [imageUrl]="gif"></app-gif-list-item>
+      <app-gif-list-item [imageUrl]="gif"></app-gif-list-item>
+       <app-gif-list-item [imageUrl]="gif"></app-gif-list-item>
+
+  }
+
+
 
 </div>
 
