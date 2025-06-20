@@ -15,13 +15,14 @@ export class GifService {
 
   constructor(){
     this.loadTrendingGifs();
+    console.log('Servicio Creado');
   }
 
   loadTrendingGifs() {
     this.http.get<GiphyResponse>(`${ environment.giphyUrl }/gifs/trending`, {
       params: {
         api_key: environment.giphyApiKey,
-        limit: 20,
+        limit: 21,
       }
     }).subscribe( (resp) => {
       const gifs = GifMapper.mapGiphyItemsToGifArray(resp.data);
