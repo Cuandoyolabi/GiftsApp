@@ -5,7 +5,10 @@
 -->
 
 
-<div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 p-5" style="width: 91%;">
+<div class="h-screen overflow-y-scroll grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 p-5" style="width: 91%;"
+  (scroll)="onScroll($event)"
+  #groupDiv
+>
 
   @for (group of gifService.trendingGifGroup(); track $index){
       <div class="grid gap-4">
